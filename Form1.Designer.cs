@@ -166,6 +166,7 @@
             save_button.TabIndex = 14;
             save_button.Text = "Save";
             save_button.UseVisualStyleBackColor = true;
+            save_button.Click += save_button_Click;
             // 
             // Form1
             // 
@@ -188,7 +189,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Get information person";
+            Text = "information person";
             ResumeLayout(false);
             PerformLayout();
         }
