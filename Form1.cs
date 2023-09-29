@@ -6,5 +6,9 @@ namespace WinForm
         {
             InitializeComponent();
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            monthCalendar1.SelectionStart = DateTime.Parse(textBox1.Text);
+        }
     }
 }
