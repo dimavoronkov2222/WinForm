@@ -28,6 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            monthCalendar1 = new MonthCalendar();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // monthCalendar1
+            // 
+            monthCalendar1.Location = new Point(464, 121);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(130, 121);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(163, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(140, 182);
+            button1.Name = "button1";
+            button1.Size = new Size(141, 29);
+            button1.TabIndex = 2;
+            button1.Text = "view on calendar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             piker1 = new DateTimePicker();
             piker2 = new DateTimePicker();
             label1 = new Label();
@@ -222,6 +249,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(monthCalendar1);
+            Name = "Form1";
+            Text = "Form1";
             Controls.Add(result);
             Controls.Add(label1);
             Controls.Add(piker2);
@@ -252,7 +283,9 @@
         }
 
         #endregion
-
+        private MonthCalendar monthCalendar1;
+        private TextBox textBox1;
+        private Button button1;
         private DateTimePicker piker1;
         private DateTimePicker piker2;
         private Label label1;
